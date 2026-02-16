@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
@@ -50,7 +51,9 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
     // Glide for Movie Posters
-    implementation("github.com/bumptech/glide:glide:4.16.0")
+    implementation(libs.glide)
+    kapt(libs.glide.compiler)
+
 
     // Lifecycle (MVVM)
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
