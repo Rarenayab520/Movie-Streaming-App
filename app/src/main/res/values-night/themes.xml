@@ -3,5 +3,10 @@
     <style name="Base.Theme.MovieStreamingApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <resources>
+            <style name="Theme.DevSphereMovies" parent="Theme.Material3.DayNight.NoActionBar">
+                <item name="colorPrimary">#FFD700</item> <item name="android:windowBackground">#0F111D</item> <item name="android:statusBarColor">#0F111D</item>
+            </style>
+        </resources>
     </style>
 </resources>
